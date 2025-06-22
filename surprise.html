@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surprise for Trisha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="birthday.html">Memories</a>
+    <a href="letters.html">Letter</a>
+    <a href="surprise.html">Surprise</a>
+    <a href="wishes.html">Wishes</a>
+  </nav>
+
+  <div class="container">
+    <h1>🎉 Surprise Time 🎉</h1>
+    <p class="subtitle">You are the biggest blessing in my life.</p>
+    <p>🎁 I have a surprise for you... Click the button below!</p>
+    <button onclick="showSurprise()">Reveal Surprise 🎈</button>
+
+    <div id="surprise-content" style="display:none;">
+      <p style="font-size: 1.3rem; margin-top: 20px;">Will you always be mine? 💖</p>
+      <button onclick="respondYes()">Yes 💘</button>
+      <button onclick="respondNo()">No 😢</button>
+    </div>
+
+    <div id="response-letter" style="display:none; margin-top: 30px; font-size: 1.1rem; background: #fff0f5; padding: 20px; border-radius: 12px;">
+      <h2>I knew it ❤️</h2>
+      <p>
+        Trisha,
+        <br><br>
+        From the very first day, I believed in us. And hearing you say "Yes" just made my heart the happiest it’s ever been. You’re not just my girlfriend – you're my dream, my joy, and the person I want to love for a lifetime.
+        <br><br>
+        I promise to always stand by you, support your dreams, and love you endlessly. Thank you for choosing me. This journey with you is the most beautiful surprise life ever gave me.
+        <br><br>
+        Forever yours,<br>
+        Harsh Kumar
+      </p>
+      <button style="margin-top: 20px;" onclick="location.href='wishes.html'">Next ➡️</button>
+    </div>
+
+    <div id="response-no" style="display:none; margin-top: 30px; font-size: 1.1rem; color: crimson;">
+      <p>😢 Oh no! That can't be true... But I'll keep loving you anyway. ❤️</p>
+    </div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise-content").style.display = 'block';
+    }
+
+    function respondYes() {
+      document.getElementById("surprise-content").style.display = 'none';
+      document.getElementById("response-letter").style.display = 'block';
+    }
+
+    function respondNo() {
+      document.getElementById("surprise-content").style.display = 'none';
+      document.getElementById("response-no").style.display = 'block';
+    }
+  </script>
+</body>
+</html>

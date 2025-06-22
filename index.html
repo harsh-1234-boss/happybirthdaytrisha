@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Trisha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="birthday.html">Memories</a>
+    <a href="letters.html">Letter</a>
+    <a href="surprise.html">Surprise</a>
+    <a href="wishes.html">Wishes</a>
+  </nav>
+
+  <div class="container">
+    <h1>Happy Birthday, Trisha! ✨</h1>
+    <p class="subtitle">Welcome to your special website – built with love ❤</p>
+    <button onclick="startJourney()">Start the Journey 🌟</button>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="birthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function startJourney() {
+      const music = document.getElementById("bg-music");
+      music.play();
+      alert("Let's begin this magical journey for Trisha! ✨");
+      setTimeout(() => {
+        window.location.href = "memories.html";
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
